@@ -1,4 +1,4 @@
-{"asn":"AS202365","prefix":"193.160.214.0/23","maxLength":32,"ta":"RIPE NCC RPKI Root"},
+{"roas":[{"asn":"AS202365","prefix":"193.160.214.0/23","maxLength":32,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS15545","prefix":"80.249.160.0/22","maxLength":22,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS9541","prefix":"43.242.102.0/24","maxLength":24,"ta":"APNIC RPKI Root"},
 {"asn":"AS39611","prefix":"213.207.52.0/24","maxLength":24,"ta":"RIPE NCC RPKI Root"},
