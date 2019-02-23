@@ -1,4 +1,4 @@
-{"asn":"AS197530","prefix":"193.138.118.0/24","maxLength":24,"ta":"RIPE NCC RPKI Root"},
+{"roas":[{"asn":"AS197530","prefix":"193.138.118.0/24","maxLength":24,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS55803","prefix":"182.160.156.0/24","maxLength":24,"ta":"APNIC RPKI Root"},
 {"asn":"AS24641","prefix":"2a02:e98::/32","maxLength":32,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS23752","prefix":"49.244.19.0/24","maxLength":24,"ta":"APNIC RPKI Root"},
@@ -1997,4 +1997,5 @@
 {"asn":"AS42841","prefix":"2a02:130::/32","maxLength":32,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS47798","prefix":"109.203.224.0/19","maxLength":19,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS51559","prefix":"93.113.60.0/24","maxLength":24,"ta":"RIPE NCC RPKI Root"},
-{"asn":"AS21294","prefix":"84.239.30.0/23","maxLength":23,"ta":"RIPE NCC RPKI Root"},
+{"asn":"AS21294","prefix":"84.239.30.0/23","maxLength":23,"ta":"RIPE NCC RPKI Root"}
+]}

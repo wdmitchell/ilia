@@ -1997,4 +1997,5 @@
 {"asn":"AS42910","prefix":"188.132.128.0/17","maxLength":17,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS8386","prefix":"46.2.244.0/22","maxLength":22,"ta":"RIPE NCC RPKI Root"},
 {"asn":"AS45588","prefix":"180.211.229.0/24","maxLength":24,"ta":"APNIC RPKI Root"},
-{"asn":"AS17882","prefix":"139.5.218.0/24","maxLength":24,"ta":"APNIC RPKI Root"},
+{"asn":"AS17882","prefix":"139.5.218.0/24","maxLength":24,"ta":"APNIC RPKI Root"}
+]}
