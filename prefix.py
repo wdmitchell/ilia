@@ -62,6 +62,7 @@ def main():
     ipv663=0
     ipv664=0
     ipv665=0
+    ipv6104=0
     ipv6128=0
     
     ipv41=0
@@ -187,6 +188,8 @@ def main():
                 ipv664 +=1
             elif "::/65" in roas['prefix']:
                 ipv665 +=1
+            elif "::/104" in roas['prefix']:
+                ipv6104 +=1
             elif "::/128" in roas['prefix']:
                 ipv6128 +=1
         #elif "::" not in roas['prefix']:
@@ -338,10 +341,11 @@ def main():
     print("IPv6 /63 Routes: ", ipv663)
     print("IPv6 /64 Routes: ", ipv664)
     print("IPv6 /65 Routes: ", ipv665)
+    print("IPv6 /104 Routes: ", ipv6104)
     print("IPv6 /128 Routes: ", ipv6128)
 
 
-    totalipv6 = ipv624+ipv625+ipv626+ipv627+ipv628+ipv629+ipv630+ipv631+ipv632+ipv633+ipv634+ipv635+ipv636+ipv637+ipv638+ipv639+ipv640+ipv641+ipv642+ipv643+ipv644+ipv645+ipv646+ipv647+ipv648+ipv649+ipv650+ipv651+ipv652+ipv653+ipv654+ipv655+ipv656+ipv657+ipv658+ipv659+ipv660+ipv661+ipv662+ipv663+ipv664+ipv665+ipv6128
+    totalipv6 = ipv624+ipv625+ipv626+ipv627+ipv628+ipv629+ipv630+ipv631+ipv632+ipv633+ipv634+ipv635+ipv636+ipv637+ipv638+ipv639+ipv640+ipv641+ipv642+ipv643+ipv644+ipv645+ipv646+ipv647+ipv648+ipv649+ipv650+ipv651+ipv652+ipv653+ipv654+ipv655+ipv656+ipv657+ipv658+ipv659+ipv660+ipv661+ipv662+ipv663+ipv664+ipv665+ipv6104+ipv6128
 
     print("Total IPv6 Routes: ", totalipv6)
 
