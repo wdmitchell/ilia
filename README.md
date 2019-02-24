@@ -16,6 +16,7 @@ python3 mrt2bgpdump.py ../bview.20190223.0800 | awk 'BEGIN{FS="|"} { print $6 " 
 7) Run python3 retreiveroa.py
 
 This will produce an output of validity_reason1.csv once it finds invalid routes.
-in this code, the 50 files read and processing at the same time. If you want to change num of file, 
+
+In this code, the 50 files read and processing at the same time. If you want to change num of file, 
 change the code in retrieveroa.py's pool Count
 
