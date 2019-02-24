@@ -11,11 +11,11 @@ poolCount = 10
 
 def apnic():
 
-    #r = requests.get("http://data1.labs.apnic.net:8080/export.json")
-    #return r.json()
-    r = open("export.json","r")
-    data = json.load(r)
-    return data
+    r = requests.get("http://data1.labs.apnic.net:8080/export.json")
+    return r.json()
+    #r = open("export.json","r")
+    #data = json.load(r)
+    #return data
     
 
 def main():
