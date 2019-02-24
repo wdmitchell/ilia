@@ -29,7 +29,7 @@ This will produce an output of validity_reason1.csv once it finds invalid routes
 In this code, the 50 files read and processing at the same time. If you want to change num of file, 
 change the code in retrieveroa.py's pool Count
 
-Also once the script has run, you can query the data with some simple awk commands to get a total number of invalid roa's per ASN
+Also once the script has run, you can query the data with some simple awk commands to get a total number of INVALID returned via the RPKI Validator when provided with the output of RIPE's BGP tools aggregated per ASN
 ```
 cat validity_reason1.csv | awk '{ print $2 }' | awk 'BEGIN{FS=":"} { print $2 }' | awk 'BEGIN{FS=","} { print $1 }' | sort | uniq -c | sort -r
     338 AS12552
