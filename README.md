@@ -10,12 +10,13 @@ before running this code, you have to install this:
 ```
 pip install future
 ```
-### installing
+
+## running
+```
 1) Download a full bviews data file from the RIPE Data BGP Archivies, we used http://data.ris.ripe.net/rrc00/2019.02/bview.20190209.0000.gz for our test.
 2) unzip the file 
 3) Utilising the MRT python BGP dump tool execute: 
-### running
-```
+
 python3 mrt2bgpdump.py ../bview.20190223.0800 | awk 'BEGIN{FS="|"} { print $6 " " $7}' | awk '{ print $1 " " $NF }' | sort -u > sorted-route-asn.txt
 
 4) mkdir data1
