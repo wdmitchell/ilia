@@ -1,4 +1,4 @@
-# ILIA - Invalid Length - Invalid Origin ASN
+# ILIA - Invalid Length - Invalid ASN
 
 This project, utilises a full routing bviews dump from RIPE to query the APNIC RPKI validator to find invalid routes.
 
