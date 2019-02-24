@@ -23,7 +23,6 @@ change the code in retrieveroa.py's pool Count
 Also once the script has run, you can query the data with some simple awk commands to get a total number of invalid roa's per ASN
 ```
  cat validity_reason1.csv | awk '{ print $2 }' | awk 'BEGIN{FS=":"} { print $2 }' | awk 'BEGIN{FS=","} { print $1 }' | sort | uniq -c
- 
       2 AS10753
       1 AS1221
       8 AS12302
@@ -116,7 +115,6 @@ Also once the script has run, you can query the data with some simple awk comman
 
 Also to see the number of invalid routes based on ORIGIN AS vs LENGTH
 ```
-
 cat validity_reason1.csv | awk '{ print $5 }' | awk 'BEGIN{FS=":"} { print $2 }' | awk 'BEGIN{FS="}"} { print $1 }' | sort | uniq -c
 
     178 as
@@ -214,7 +212,5 @@ IPv6 /64 Routes:  247
 IPv6 /65 Routes:  1
 IPv6 /104 Routes:  1
 IPv6 /128 Routes:  1
-
 Total IPv6 Routes:  11446 
-
 ```
