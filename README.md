@@ -21,7 +21,7 @@ In this code, the 50 files read and processing at the same time. If you want to 
 change the code in retrieveroa.py's pool Count
 
 Also once the script has run, you can query the data with some simple awk commands to get a total number of invalid roa's per ASN
-
+```
  cat validity_reason1.csv | awk '{ print $2 }' | awk 'BEGIN{FS=":"} { print $2 }' | awk 'BEGIN{FS=","} { print $1 }' | sort | uniq -c
  
       2 AS10753
@@ -112,13 +112,16 @@ Also once the script has run, you can query the data with some simple awk comman
       1 AS9484
       1 AS9498
       1 AS9541
+```
 
 Also to see the number of invalid routes based on ORIGIN AS vs LENGTH
+```
 
 cat validity_reason1.csv | awk '{ print $5 }' | awk 'BEGIN{FS=":"} { print $2 }' | awk 'BEGIN{FS="}"} { print $1 }' | sort | uniq -c
 
     178 as
     430 length
+```
 
 ROA count by prefix tool
 
@@ -129,8 +132,6 @@ To run the tool, simply run "python3 prefix.py"
 ubuntu@ip-172-31-1-149:~/invalid-roa$ python3 prefix.py
 
 Querying APNIC LABS
-
-
 
 IPv4 /1 Routes:  0
 IPv4 /2 Routes:  0
